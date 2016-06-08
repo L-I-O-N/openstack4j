@@ -4,6 +4,7 @@ import org.openstack4j.model.ResourceEntity;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -79,14 +80,14 @@ public interface Cluster extends ResourceEntity {
      *
      * @return the nodes of the cluster
      */
-    ArrayList<String> getNodes();
+    List<String> getNodes();
 
     /**
      * Returns the policies of the cluster
      *
      * @return the policies of the cluster
      */
-    ArrayList<String> getPolicies();
+    List<String> getPolicies();
 
     /**
      * Returns the profile id of the cluster

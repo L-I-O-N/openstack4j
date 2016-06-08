@@ -3,6 +3,7 @@ package org.openstack4j.model.senlin;
 import org.openstack4j.model.ModelEntity;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -36,5 +37,5 @@ public interface Version extends ModelEntity {
 	 *
 	 * @return the links of the senlin version
 	 */
-	ArrayList<Map<String, String>> getLinks();
+	List<Map<String, String>> getLinks();
 }

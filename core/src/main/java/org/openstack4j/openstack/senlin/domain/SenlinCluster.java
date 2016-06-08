@@ -45,9 +45,9 @@ public class SenlinCluster implements Cluster {
 	@JsonProperty("name")
 	private String name;
 	@JsonProperty("nodes")
-	private ArrayList<String> nodes;
+	private List<String> nodes;
 	@JsonProperty("policies")
-	private ArrayList<String> policies;
+	private List<String> policies;
 	@JsonProperty("profile_id")
 	private String profileID;
 	@JsonProperty("profile_name")
@@ -116,12 +116,12 @@ public class SenlinCluster implements Cluster {
 	}
 
 	@Override
-	public ArrayList<String> getNodes() {
+	public List<String> getNodes() {
 		return nodes;
 	}
 
 	@Override
-	public ArrayList<String> getPolicies() {
+	public List<String> getPolicies() {
 		return policies;
 	}
 

@@ -27,7 +27,7 @@ public class SenlinVersion implements Version {
 	@JsonProperty("id")
 	private String id;
 	@JsonProperty("links")
-	private ArrayList<Map<String, String>> links;
+	private List<Map<String, String>> links;
 
 	@Override
 	public String getStatus() {
@@ -40,7 +40,7 @@ public class SenlinVersion implements Version {
 	}
 
 	@Override
-	public ArrayList<Map<String, String>> getLinks() {
+	public List<Map<String, String>> getLinks() {
 		return links;
 	}
 
